@@ -42,7 +42,7 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link hover-overlay ripple shadow-1-strong rounded lead" href="#">Home</a>
+                <form action="{% url 'index' %}"><button type="submit" class="nav-link hover-overlay ripple shadow-1-strong rounded lead" href="#">Home</a></button></form>
               </li>
               <li class="nav-item">
                 <a class="nav-link hover-overlay ripple shadow-1-strong rounded lead" href="#">Menu</a>
@@ -112,9 +112,7 @@
             </table>
         </div>
           {% endif %}
-          <!-- Right elements -->
-        </div>
-        <!-- Container wrapper -->
+
       </nav>
 </head> 
 <body>
@@ -123,10 +121,6 @@
     <div class = "container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">&copy; 2022 E-coffee-Shop</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use src="{%static 'img/coffee-online.png'%}"/></svg>
-        </a>
     
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
